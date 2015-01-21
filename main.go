@@ -54,6 +54,8 @@ func main() {
 		log.Fatal(err)
 	}
 
+	//poll duration
+	dur := time.Minute * time.Duration(60)
 	// Start the reaper
 	st.StartReaper()
 
